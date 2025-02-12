@@ -1,0 +1,21 @@
+{
+  "name": "while",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "ex01": "node ./scr/ex01.js",
+    "ex02": "node ./scr/ex02.js",
+    "ex03": "node ./scr/ex03.js",
+    "ex04": "node ./scr/ex04.js",
+    "ex05": "node ./scr/ex05.js",
+    "ex06": "node ./scr/ex06.js",
+    "ex07": "node ./scr/ex07.js",
+    "ex08": "node ./scr/ex08.js",
+    "ex09": "node ./scr/ex09.js",
+    "ex10": "node ./scr/ex10.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

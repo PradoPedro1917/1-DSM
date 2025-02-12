@@ -1,0 +1,20 @@
+{
+  "name": "aula9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ex01": "node ./src/ex01",
+    "ex02": "node ./src/ex02",
+    "ex03": "node ./src/ex03",
+    "ex04": "node ./src/ex04",
+    "ex05": "node ./src/ex05",
+    "ex06": "node ./src/ex06",
+    "ex07": "node ./src/ex07",
+    "ex08": "node ./src/ex09",
+    "ex09": "node ./src/ex10"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

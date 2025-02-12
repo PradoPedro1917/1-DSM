@@ -1,0 +1,16 @@
+{
+  "name": "tarefa4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "ex01": "node ./src/ex01.js",
+    "ex02": "node ./src/ex02.js",
+    "ex03": "node ./src/ex03.js",
+    "ex04": "node ./src/ex04.js",
+    "ex05": "node ./src/ex05.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
