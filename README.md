@@ -25,8 +25,3 @@ Em Desenvolvimento Web I, focamos em criar páginas web utilizando HTML, CSS e J
 - **CSS**: Usado para estilizar as páginas web, definindo o layout, cores, fontes e demais aspectos visuais das páginas.
 
 - **SQL**: Linguagem usada para manipulação de dados em bancos de dados relacionais. Foi fundamental na criação de tabelas e na realização de operações de consulta, inserção, atualização e remoção de dados em bancos como MySQL ou SQLite.
-
-## Estrutura do Repositório
-
-O repositório está organizado da seguinte forma:
-
