@@ -1,0 +1,83 @@
+-- Ex 01 --
+insert into tbaluno (id, nome)
+values
+(1, 'Ana Maria'),
+(2, 'Luiz Carlos'),
+(3, 'Maria Silva'),
+(4, 'Renato Rodrigues'),
+(5, 'Carla Santiago');
+
+select * from tbaluno;
+
+-- Ex 02 --
+insert into tbdisciplina
+values
+(1, 'Modelagem de Banco de Dados', 80),
+(2, 'Design Digital', 80),
+(3, 'Estrutura de Dados', NULL ),
+(4, 'Experiência do Usuário', 40),
+(5, 'Aprendizagem de Máquina', NULL),
+(6, 'Ingles', NULL);
+
+select * from tbdisciplina;
+
+-- Ex 03 --
+insert into tbmatricula
+values
+(3, 1, 7.8),
+(1, 5, 8.4),
+(1, 2, 7.5),
+(6, 2, NULL),
+(3, 4, NULL),
+(5, 4, 8.9),
+(6, 4, NULL);
+select * from tbmatricula
+
+-- Ex 04 --
+update tbmatricula
+set nota = nota + 0.5
+WHERE nota is not NULL;
+
+-- Ex 05 --
+update tbmatricula as m
+set nota = nota + 0.2
+from tbdisciplina as d
+WHERE m.iddisciplina = d.id and d.nome = 'Modelagem de Banco de Dados';
+
+-- Ex.06 --
+select d.nome, a.nome, nota from tbaluno as a,
+tbmatricula as m, tbdisciplina as d
+where a. id = m.idaluno and d.id = m.iddisciplina
+order by a.nome, d.nome;
+
+update tbmatricula as m
+set nota = 5.0
+from tbaluno as a, tbdisciplina as d
+where a.id = m.idaaluno and d.id = m.iddisciplina
+and a.nome = 'Luiz Carlos' and d.nome = 'Ingles I';
+
+-- Ex.07 --
+update tbmatricula as m
+set nota = 0.0
+from tbaluno as a, tbdisciplina as d
+where a.id = m.idaluno and d.id = m.iddisciplina
+and nota is null;
+
+select d.nome, a.nome, m.nota from tbaluno as a, tbmatricula as m,
+tbdisciplina as d  where a.id = m.idaluno and d.id = m.iddisciplina
+
+order by a.nome, d.nome
+
+-- Ex 08 --
+delete from tbmatricula
+where nota = 0.0;
+
+-- Ex 09--
+delete from tbmatricula as m
+using tbaluno as a, tbdisciplina as d
+where a.id = m.idaluno and d.id = m.iddisciplina
+and a.nome = 'Luiz Carlos' and d.nome = 'Ingles I'
+
+-- Ex10 --
+delete from tbmatricula;
+

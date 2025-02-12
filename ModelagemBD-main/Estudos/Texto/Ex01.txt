@@ -1,0 +1,113 @@
+drop table if exists bairro;
+drop table if exists Cidade;
+drop table if exists endereco;
+
+EXERCICIO 01:
+
+drop table if exists bairro;
+drop table if exists Cidade;
+drop table if exists endereco;
+
+EXERCICIO 02:
+
+drop table if exists endereco;
+drop table if exists bairro;
+drop table if exists Cidade;
+
+CREATE TABLE bairro (
+ 
+  idbairro INTEGER NOT NULL,
+ 
+  Cidade_idCidade INTEGER  NOT NULL,
+ 
+  nome VARCHAR(20) NULL,
+ 
+  idcidade INTEGER NULL,
+ 
+  PRIMARY KEY(idbairro)
+ 
+);
+
+CREATE TABLE Cidade (
+ 
+  idCidade INTEGER  NOT NULL,
+ 
+  nome VARCHAR(40) NULL,
+ 
+  nf CHAR(2) NULL,
+ 
+  PRIMARY KEY(idCidade)
+ 
+);
+
+CREATE TABLE endereco (
+ 
+  idendereco INTEGER  NOT NULL,
+ 
+  bairro_idbairro INTEGER  NOT NULL,
+ 
+  logadouro VARCHAR(30) NULL,
+ 
+  numero INTEGER NULL,
+ 
+  cep INTEGER NULL,
+ 
+  idbairro INTEGER NULL,
+ 
+  PRIMARY KEY(idendereco)
+ 
+);
+
+EXERCICIO 03:
+
+CREATE TABLE Tarefa (
+  idTarefa INTEGER NOT NULL,
+  idtarefapai INTEGER  NOT NULL,
+  nome VARCHAR(30) NULL,
+  valor FLOAT NULL,
+  PRIMARY KEY(idTarefa)
+
+);
+
+EXERCICIO 04:
+
+CREATE TABLE ocupa (
+  placa_veiculo CHAR NOT NULL,
+  nome_vaga VARCHAR(10) NOT NULL,
+  valor FLOAT NULL,
+  inicio TIMESTAMP NULL,
+  fim TIMESTAMP NULL,
+  PRIMARY KEY(placa_veiculo, nome_vaga)
+  
+);
+
+CREATE TABLE vaga (
+  nome VARCHAR(10) NOT NULL ,
+  PRIMARY KEY(nome)
+);
+
+CREATE TABLE veiculo (
+  placa CHAR NOT NULL ,
+  marca VARCHAR(20) NULL,
+  modelo VARCHAR(20) NULL,
+  PRIMARY KEY(placa)
+);
+
+
+EXERCICIO 5
+
+CREATE TABLE imovel (
+  idimovel INTEGER  NOT NULL,
+  descricao VARCHAR(50) NULL,
+  idproprietario INTEGER  NOT NULL,
+  idinquilino INTEGER  NOT NULL,
+  PRIMARY KEY(idimovel)
+
+);
+
+CREATE TABLE pessoa (
+  idpessoa INTEGER  NOT NULL,
+  nome VARCHAR(40) NULL,
+  PRIMARY KEY(idpessoa)
+);
+

@@ -1,0 +1,23 @@
+-- ex 1 --
+select c.nome as "Curso" from tbcurso as c, tbunidade as u, tbcurso_por_unidade as cpu
+where u.id = cpu.idunidade and c.id = cpu.idcurso
+and u.municipio = 'Jacareí' order by c.nome;
+
+-- ex 2 --
+select c.nome, t.nome as "Turno" 
+from tbcurso as c, tbunidade as u, tbcurso_por_unidade as cpu, tbturno as t
+where u.id = cpu.idunidade 
+and c.id = cpu.idcurso
+and u.municipio = 'Jacareí' order by c.nome;
+
+-- ex 3 --
+select distinct u.unidade as "Unidade" 
+from tbcurso as c, tbunidade as u, tbcurso_por_unidade as cpu
+where u.id = cpu.idunidade and c.id = cpu.idcurso
+and c.nome = 'Gestão Finaceira' order by u.unidade;
+
+-- ex 4 --
+select distinct t.nome as "Turno" 
+from tbcurso as c, tbturno as t, tbcurso_por_unidade as cpu
+where t.id = cpu.idunidade and c.id = cpu.idcurso
+and c.nome = 'Gestão Finaceira' order by t.nome;

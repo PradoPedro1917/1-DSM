@@ -1,0 +1,32 @@
+ex 01
+select * from tbfaculdade;
+
+ex 02
+select*from tbfaculdade order by municipio desc;
+
+ex 03
+select * from tbfaculdade where municipio = 'Jacareí';
+
+ex04
+select * from tbfaculdade where numero is null;
+
+ex05
+select * from tbfaculdade where municipio ilike 'f%';
+
+ex06
+select * from tbfaculdade where bairro ilike '%vila%';
+
+ex07
+select * from tbfaculdade where cep ilike '%000';
+
+ex08
+select * from tbfaculdade where cep ilike '_5%';
+
+ex09
+select * from tbfaculdade where cep ilike '_5%2_';
+
+ex10
+select * from tbfaculdade where cep ilike '__';
+
+
+
