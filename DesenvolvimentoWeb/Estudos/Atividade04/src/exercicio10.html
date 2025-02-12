@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 10</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        span {
+            color: red;
+            font-weight: lighter;
+        }
+
+        .fds {
+            font-weight: bold;
+
+        }
+
+        .normal {
+
+            font-style: italic;
+        }
+
+        .compromisso {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: lighter;
+        }
+
+        .compromisso:hover {
+            background-color: rgb(9, 117, 9);
+        }
+
+        .fdscomp {
+            font-weight: bold;
+        }
+
+        .fdscomp:hover {
+            background-color: rgb(9, 117, 9);
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Agenda</h3>
+    <div>
+        <ol>
+            <li class="fds">
+                <span>Domingo</span>
+                <ul type="square">
+                    <li class="fdscomp">Ir no parque</li>
+                    <li class="fdscomp">Futebol</li>
+                </ul>
+            </li>
+            <li class="normal">
+                Segunda-feira
+                <ol type="i">
+                    <li class="compromisso">Reunião</li>
+                    <li class="compromisso">Cliente</li>
+                </ol>
+            </li>
+            <li class="normal">Terça-feira</li>
+            <li class="normal">Quarta-feira</li>
+            <li class="normal">
+                Quinta-feira
+                <ul type="square">
+                    <li class="compromisso">Dentista</li>
+                    <li class="compromisso">Mercado</li>
+                </ul>
+            </li>
+            <li class="normal">Sexta-feira</li>
+            <li class="fds">
+                <span>Sábado</span>
+                <ul type="square">
+                    <li class="fdscomp">Cinema</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>

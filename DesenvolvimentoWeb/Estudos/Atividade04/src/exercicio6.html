@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Exercício 6</title>
+    <style>
+        body {
+            font-weight:lighter;
+            font-family: Calibri, sans-serif;
+            font-size: 14px;
+        }
+
+        .linha {
+            margin: 8px 0;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            color: #fff;
+            background-color: #444;
+            border-radius: 5px;
+            border: 1px solid #888;
+            padding: 4px;
+        }
+        #nome {
+            width: 200px;
+        }
+        #idade {
+            width: 50px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="linha">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" value="Maria" />
+        </div>
+        <div class="linha">
+            <label for="idade">Idade</label>
+            <input type="number" value="18" name="idade" id="idade" />
+        </div>
+        <button>Enviar</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+p {
+    color: blue;
+    background-color: lightgray;
+    }
+    div {
+    border: 2px solid red;
+    font-weight: bold;
+    }
+.nome {
+    color:cyan;
+    background-color:black
+}
